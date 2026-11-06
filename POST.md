@@ -70,4 +70,4 @@ Every night a script counts, per session, the longest gap between posts during t
 
 The game isn't out yet (the full release moved to January 2027 so the art can catch up), so I can't claim sales. What I can claim: one person kept seven parallel workstreams moving for two weeks, and the daily silence went from hours to under an hour for most sessions.
 
-I'm cleaning up the templates (decision table, lock rules, relay and kickoff prompts) into a repo. If you run more than two agents at once and want them, the waitlist is below.
+I'm cleaning up the templates (decision table, lock rules, relay and kickoff prompts) into a repo. If you run more than two agents at once, take them and star the repo; stars tell me whether a ready-to-run setup is worth building.
