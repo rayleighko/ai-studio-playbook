@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio of One</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{--bg:#f3f4ef;--fg:#1d2320;--muted:#5b6660;--line:#c9cfc6;--accent:#2f6b4f;--card:#ffffff;--mono:"IBM Plex Mono",ui-monospace,monospace;--serif:"Source Serif 4",Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#141816;--fg:#e4e8e3;--muted:#9aa59e;--line:#2f3833;--accent:#7fc4a0;--card:#1b201d;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 var(--serif)}
+main{max-width:720px;margin:0 auto;padding:48px max(16px,env(safe-area-inset-left,0px)) 64px max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:.3em 0 .4em;text-wrap:balance}
+p{color:var(--muted);max-width:62ch}
+.log{font:13px/1.7 var(--mono);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 16px;overflow-x:auto;white-space:pre;color:var(--fg)}
+table{width:100%;border-collapse:collapse;font:14px var(--mono);margin:8px 0 24px}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;font-variant-numeric:tabular-nums}
+form{display:grid;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px}
+label{font:600 13px var(--mono)}input,select{font:16px var(--serif);padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg)}
+button{font:600 15px var(--mono);padding:12px;border:0;border-radius:4px;background:var(--accent);color:var(--bg);cursor:pointer}
+small{color:var(--muted)}
+</style></head><body><main>
+<div class="eyebrow">Playbook · draft</div>
+<h1>One developer, seven AI sessions, one board</h1>
+<p>The coordination rules I use to run a small game studio of AI coding sessions on one PC: a decision table the relay can act on, screen and RAM locks, a queue per session, and a nightly count of who went quiet and for how long.</p>
+<div class="log">core 21:36 done: depth journal, flat days 14 → 7, tests 409/0
+relay 06:48 back after reboot, ticks resumed
+art 04:33 done: style A idles 55/55, ledger $38.38
+rbx 22:16 published place verified: spawn → hatch → feedback event</div>
+<h2>The longest silence, per day</h2>
+<table><tr><th>Day</th><th>Worst gap</th><th>Rule added</th></tr>
+<tr><td>Nov 4</td><td>relay 3 h</td><td>20-min relay ticks</td></tr>
+<tr><td>Nov 5</td><td>rbx 218 min, waiting on me</td><td>"owner's part" lines</td></tr>
+<tr><td>Nov 6</td><td>rbx 515 min</td><td>queue file per session</td></tr></table>
+<h2>Get the templates</h2>
+<form id="wl" onsubmit="event.preventDefault()">
+<label for="em">Email</label><input id="em" type="email" required placeholder="you@studio.dev">
+<label for="n">How many AI sessions do you run at once?</label>
+<select id="n"><option>1</option><option>2–3</option><option>4–6</option><option>7+</option></select>
+<label for="p">What would you pay for a ready-to-run setup?</label>
+<select id="p"><option>Nothing, templates only</option><option>$9 one-time</option><option>$29 one-time</option><option>$9/month with updates</option><option>Coaching call</option></select>
+<button type="submit">Join the waitlist</button>
+<small>We use your email only to send the templates and launch news. Unsubscribe any time. Draft: not connected yet.</small>
+</form>
+</main></body></html>
